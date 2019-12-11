@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IDEA on XingSo&#39;s Blog</title>
+    <link>http://xingso.github.io/tags/idea/</link>
+    <description>Recent content in IDEA on XingSo&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>Copyright © 2015–2020, XingSo; All rights reserved.</copyright>
+    <lastBuildDate>Sat, 10 Nov 2018 16:45:00 +0800</lastBuildDate>
+    
+	<atom:link href="http://xingso.github.io/tags/idea/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>IDEA常用插件</title>
+      <link>http://xingso.github.io/posts/dev/backend/java/idea%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/</link>
+      <pubDate>Sat, 10 Nov 2018 16:45:00 +0800</pubDate>
+      
+      <guid>http://xingso.github.io/posts/dev/backend/java/idea%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/</guid>
+      <description>CamelCase 自动转换驼峰命名，首字母大写命名，快捷键alt+shift+u free-mybatis mybatis 辅助插件</description>
+    </item>
+    
+  </channel>
+</rss>

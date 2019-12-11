@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mybatis on XingSo&#39;s Blog</title>
+    <link>http://xingso.github.io/tags/mybatis/</link>
+    <description>Recent content in mybatis on XingSo&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>Copyright © 2015–2020, XingSo; All rights reserved.</copyright>
+    
+	<atom:link href="http://xingso.github.io/tags/mybatis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mybatis关联查询</title>
+      <link>http://xingso.github.io/posts/dev/backend/db/mybatis/%E5%85%B3%E8%81%94%E6%9F%A5%E8%AF%A2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://xingso.github.io/posts/dev/backend/db/mybatis/%E5%85%B3%E8%81%94%E6%9F%A5%E8%AF%A2/</guid>
+      <description>方案一（只查询一次，程序组装数据） 通过 resultMap 例如 record中的tags子对象 &amp;lt;resultMap id=&amp;quot;accountRecordMap&amp;quot; type=&amp;quot;com.doomou.xshome.Entitys.finance.AccountRecord&amp;quot;&amp;gt; &amp;lt;id column=&amp;quot;id&amp;quot; property=&amp;quot;id&amp;quot;/&amp;gt; &amp;lt;result column=&amp;quot;name&amp;quot; property=&amp;quot;name&amp;quot;/&amp;gt; &amp;lt;result column=&amp;quot;price&amp;quot; property=&amp;quot;price&amp;quot;/&amp;gt; &amp;lt;result column=&amp;quot;time&amp;quot; property=&amp;quot;time&amp;quot;/&amp;gt; &amp;lt;result column=&amp;quot;operator&amp;quot; property=&amp;quot;operator&amp;quot;/&amp;gt; &amp;lt;result column=&amp;quot;location&amp;quot; property=&amp;quot;location&amp;quot;/&amp;gt; &amp;lt;result column=&amp;quot;is_no_budget&amp;quot; property=&amp;quot;isNoBudget&amp;quot;/&amp;gt; &amp;lt;collection property=&amp;quot;tags&amp;quot; column=&amp;quot;id&amp;quot; ofType=&amp;quot;com.doomou.xshome.Entitys.common.TagEntity&amp;quot; &amp;gt; &amp;lt;id column=&amp;quot;tid&amp;quot; property=&amp;quot;id&amp;quot;/&amp;gt; &amp;lt;result</description>
+    </item>
+    
+    <item>
+      <title>Mybatis获取插入ID的两种方法</title>
+      <link>http://xingso.github.io/posts/dev/backend/db/mybatis/%E8%8E%B7%E5%8F%96%E6%8F%92%E5%85%A5id%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://xingso.github.io/posts/dev/backend/db/mybatis/%E8%8E%B7%E5%8F%96%E6%8F%92%E5%85%A5id%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E6%B3%95/</guid>
+      <description>方法一： &amp;lt;insert id=&amp;quot;insert&amp;quot; parameterType=&amp;quot;com.xxx.xxxx.pojo.User&amp;quot;&amp;gt; insert into t_user (name) values (#{user.name}) &amp;lt;selectKey resultType=&amp;quot;Integer&amp;quot; order=&amp;quot;AFTER&amp;quot; keyProperty=&amp;quot;user.userId&amp;quot;&amp;gt; SELECT LAST_INSERT_ID() AS userId &amp;lt;/selectKey&amp;gt; &amp;lt;/insert&amp;gt; 方法二（常用）： &amp;lt;insert id=&amp;quot;insert&amp;quot; parameterType=&amp;quot;Spares&amp;quot; useGeneratedKeys=&amp;quot;true&amp;quot; keyProperty=&amp;quot;id&amp;quot;&amp;gt; insert into system(name) values(#{name}) &amp;lt;/insert&amp;gt; 然后在调用的时候就可以用插入对象的id属性来获取了。</description>
+    </item>
+    
+  </channel>
+</rss>

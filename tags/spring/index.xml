@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>spring on XingSo&#39;s Blog</title>
+    <link>http://xingso.github.io/tags/spring/</link>
+    <description>Recent content in spring on XingSo&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>Copyright © 2015–2020, XingSo; All rights reserved.</copyright>
+    <lastBuildDate>Tue, 10 Dec 2019 16:11:00 +0800</lastBuildDate>
+    
+	<atom:link href="http://xingso.github.io/tags/spring/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Spring常用注解</title>
+      <link>http://xingso.github.io/posts/dev/backend/java/spring/%E5%B8%B8%E7%94%A8%E6%B3%A8%E8%A7%A3/</link>
+      <pubDate>Tue, 10 Dec 2019 16:11:00 +0800</pubDate>
+      
+      <guid>http://xingso.github.io/posts/dev/backend/java/spring/%E5%B8%B8%E7%94%A8%E6%B3%A8%E8%A7%A3/</guid>
+      <description>返回的JSON忽略某字段 在这个字段的get方法上加上@JsonIgnore @JsonIgnore public String getPassword() { return password; }</description>
+    </item>
+    
+  </channel>
+</rss>
