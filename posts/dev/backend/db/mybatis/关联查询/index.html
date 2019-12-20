@@ -5,14 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <meta property="og:title" content="Mybatis关联查询" />
-<meta property="og:description" content="方案一（只查询一次，程序组装数据） 通过 resultMap 例如 record中的tags子对象 &lt;resultMap id=&quot;accountRecordMap&quot; type=&quot;com.doomou.xshome.Entitys.finance.AccountRecord&quot;&gt; &lt;id column=&quot;id&quot; property=&quot;id&quot;/&gt; &lt;result column=&quot;name&quot; property=&quot;name&quot;/&gt; &lt;result column=&quot;price&quot; property=&quot;price&quot;/&gt; &lt;result column=&quot;time&quot; property=&quot;time&quot;/&gt; &lt;result column=&quot;operator&quot; property=&quot;operator&quot;/&gt; &lt;result column=&quot;location&quot; property=&quot;location&quot;/&gt; &lt;result column=&quot;is_no_budget&quot; property=&quot;isNoBudget&quot;/&gt; &lt;collection property=&quot;tags&quot; column=&quot;id&quot; ofType=&quot;com.doomou.xshome.Entitys.common.TagEntity&quot; &gt; &lt;id column=&quot;tid&quot; property=&quot;id&quot;/&gt; &lt;result" />
+<meta property="og:description" content="&nbsp; 方案一（只查询一次，程序组装数据） &nbsp; 通过 resultMap 例如 record中的tags子对象 &lt;resultMap id=&quot;accountRecordMap&quot; type=&quot;com.doomou.xshome.Entitys.finance.AccountRecord&quot;&gt; &lt;id column=&quot;id&quot; property=&quot;id&quot;/&gt; &lt;result column=&quot;name&quot; property=&quot;name&quot;/&gt; &lt;result column=&quot;price&quot; property=&quot;price&quot;/&gt; &lt;result column=&quot;time&quot; property=&quot;time&quot;/&gt; &lt;result column=&quot;operator&quot; property=&quot;operator&quot;/&gt; &lt;result column=&quot;location&quot; property=&quot;location&quot;/&gt; &lt;result column=&quot;is_no_budget&quot; property=&quot;isNoBudget&quot;/&gt; &lt;collection property=&quot;tags&quot; column=&quot;id&quot; ofType=&quot;com.doomou.xshome.Entitys.common.TagEntity&quot; &gt; &lt;id column=&quot;tid&quot;" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://xingso.github.io/posts/dev/backend/db/mybatis/%E5%85%B3%E8%81%94%E6%9F%A5%E8%AF%A2/" />
 
 
         <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Mybatis关联查询"/>
-<meta name="twitter:description" content="方案一（只查询一次，程序组装数据） 通过 resultMap 例如 record中的tags子对象 &lt;resultMap id=&quot;accountRecordMap&quot; type=&quot;com.doomou.xshome.Entitys.finance.AccountRecord&quot;&gt; &lt;id column=&quot;id&quot; property=&quot;id&quot;/&gt; &lt;result column=&quot;name&quot; property=&quot;name&quot;/&gt; &lt;result column=&quot;price&quot; property=&quot;price&quot;/&gt; &lt;result column=&quot;time&quot; property=&quot;time&quot;/&gt; &lt;result column=&quot;operator&quot; property=&quot;operator&quot;/&gt; &lt;result column=&quot;location&quot; property=&quot;location&quot;/&gt; &lt;result column=&quot;is_no_budget&quot; property=&quot;isNoBudget&quot;/&gt; &lt;collection property=&quot;tags&quot; column=&quot;id&quot; ofType=&quot;com.doomou.xshome.Entitys.common.TagEntity&quot; &gt; &lt;id column=&quot;tid&quot; property=&quot;id&quot;/&gt; &lt;result"/>
+<meta name="twitter:description" content="&nbsp; 方案一（只查询一次，程序组装数据） &nbsp; 通过 resultMap 例如 record中的tags子对象 &lt;resultMap id=&quot;accountRecordMap&quot; type=&quot;com.doomou.xshome.Entitys.finance.AccountRecord&quot;&gt; &lt;id column=&quot;id&quot; property=&quot;id&quot;/&gt; &lt;result column=&quot;name&quot; property=&quot;name&quot;/&gt; &lt;result column=&quot;price&quot; property=&quot;price&quot;/&gt; &lt;result column=&quot;time&quot; property=&quot;time&quot;/&gt; &lt;result column=&quot;operator&quot; property=&quot;operator&quot;/&gt; &lt;result column=&quot;location&quot; property=&quot;location&quot;/&gt; &lt;result column=&quot;is_no_budget&quot; property=&quot;isNoBudget&quot;/&gt; &lt;collection property=&quot;tags&quot; column=&quot;id&quot; ofType=&quot;com.doomou.xshome.Entitys.common.TagEntity&quot; &gt; &lt;id column=&quot;tid&quot;"/>
 
         
         <title>
@@ -30,6 +30,16 @@
         <link rel="stylesheet" href="http://xingso.github.io/css/bundle.min.b97f193de70a99ff0493bab9f65bdc1a4620f1d92b801069ccd3b39cd1f972f5.css" integrity="sha256-uX8ZPecKmf8Ek7q59lvcGkYg8dkrgBBpzNOznNH5cvU="  />
 
                 
+        <script>
+            var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "https://hm.baidu.com/hm.js?82544d8e550e49177264d2a3ff48e9eb";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+            })();
+            </script>
+            
     </head>
     <body>
         <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark py-1 top-nav">
@@ -60,11 +70,18 @@
 <article class="container mt-4 post">
     <h1>Mybatis关联查询</h1>
     
-    <p> </p>
-<h2 id="heading">方案一（只查询一次，程序组装数据）</h2>
-<p> </p>
+    
+
+<p>&nbsp;</p>
+
+<h2 id="方案一-只查询一次-程序组装数据">方案一（只查询一次，程序组装数据）</h2>
+
+<p>&nbsp;</p>
+
 <p>通过 resultMap</p>
+
 <p>例如 record中的tags子对象</p>
+
 <pre><code>&lt;resultMap id=&quot;accountRecordMap&quot; type=&quot;com.doomou.xshome.Entitys.finance.AccountRecord&quot;&gt;
     &lt;id column=&quot;id&quot; property=&quot;id&quot;/&gt;
     &lt;result column=&quot;name&quot; property=&quot;name&quot;/&gt;
@@ -80,7 +97,9 @@
     &lt;/collection&gt;
 &lt;/resultMap&gt;
 </code></pre>
+
 <p>查询时，查出的相关字段对应resultMap中子对象的相关字段即可</p>
+
 <pre><code>&lt;select id=&quot;loadList&quot; resultMap=&quot;accountRecordMap&quot;&gt;
   SELECT T1.*,T3.name as tname,T3.id as tid,T3.color as tcolor
   FROM t_account_record T1
@@ -89,11 +108,17 @@
   WHERE T1.time&gt;#{beginTime} AND T1.time&lt;#{endTime}
 &lt;/select&gt;
 </code></pre>
-<hr>
-<p> </p>
-<h2 id="-">方案二 （查询多次，获取每个嵌套关系的数据）</h2>
-<p> </p>
+
+<hr />
+
+<p>&nbsp;</p>
+
+<h2 id="方案二-查询多次-获取每个嵌套关系的数据">方案二 （查询多次，获取每个嵌套关系的数据）</h2>
+
+<p>&nbsp;</p>
+
 <p>定义resultMap 的时候制定每个子集的查询方法，例如这里的com.foo.bean.AuthorMapper.selectByPrimaryKey 和  com.foo.bean.PostMapper.selectByBlogId</p>
+
 <pre><code>&lt;resultMap type=&quot;com.foo.bean.BlogInfo&quot; id=&quot;BlogInfo&quot;&gt;
     &lt;id column=&quot;blog_id&quot; property=&quot;blogId&quot; /&gt;
     &lt;result column=&quot;title&quot; property=&quot;title&quot; /&gt;
@@ -105,7 +130,9 @@
     &lt;/collection&gt;
 &lt;/resultMap&gt;
 </code></pre>
+
 <p>查询时，直接查父元素即可</p>
+
 <pre><code>&lt;select id=&quot;queryBlogInfoById&quot; resultMap=&quot;BlogInfo&quot; parameterType=&quot;java.math.BigDecimal&quot;&gt;
     SELECT
     B.BLOG_ID,
@@ -113,7 +140,8 @@
     B.AUTHOR_ID AS BLOG_AUTHOR_ID
     FROM LOULUAN.BLOG B
     where B.BLOG_ID = #{blogId,jdbcType=DECIMAL}
-&lt;/select&gt;</code></pre>
+&lt;/select&gt;
+</code></pre>
 
 </article>
 <div class="sidebar d-print-none d-none d-xl-block">

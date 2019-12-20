@@ -17,7 +17,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://xingso.github.io/posts/dev/backend/db/mysql/mysql5.6%E9%85%8D%E7%BD%AE/</guid>
-      <description>1.配置文件 My.ini 路径 在services里面可以看到。默认为：&amp;ldquo;C:\ProgramData\MySQL\MySQL Server 5.6\my.ini&amp;rdquo;</description>
+      <description>1.配置文件 My.ini 路径 在services里面可以看到。默认为：&amp;rdquo;C:\ProgramData\MySQL\MySQL Server 5.6\my.ini&amp;rdquo;</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://xingso.github.io/posts/dev/backend/db/mysql/mysql%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
-      <description>1.用户 1.添加用户 命令: CREATE USER &#39;username&#39;@&#39;host&#39; IDENTIFIED BY &#39;password&#39;; 例子: CREATE USER &#39;dog&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;123456&#39;; CREATE USER &#39;dog2&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;&#39;; PS：username - 你将创建的用户名, host - 指定该用户在哪个主机上可以</description>
+      <description>1.用户 &amp;nbsp; 1.添加用户 命令: CREATE USER &#39;username&#39;@&#39;host&#39; IDENTIFIED BY &#39;password&#39;; 例子: CREATE USER &#39;dog&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;123456&#39;; CREATE USER &#39;dog2&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;&#39;; PS：username - 你将创建的用户名, host - 指定该用户在哪个主机上可</description>
     </item>
     
   </channel>

@@ -30,6 +30,16 @@
         <link rel="stylesheet" href="http://xingso.github.io/css/bundle.min.b97f193de70a99ff0493bab9f65bdc1a4620f1d92b801069ccd3b39cd1f972f5.css" integrity="sha256-uX8ZPecKmf8Ek7q59lvcGkYg8dkrgBBpzNOznNH5cvU="  />
 
                 
+        <script>
+            var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "https://hm.baidu.com/hm.js?82544d8e550e49177264d2a3ff48e9eb";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+            })();
+            </script>
+            
     </head>
     <body>
         <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark py-1 top-nav">
@@ -60,7 +70,10 @@
 <article class="container mt-4 post">
     <h1>Mybatis获取插入ID的两种方法</h1>
     
-    <h2 id="heading">方法一：</h2>
+    
+
+<h2 id="方法一">方法一：</h2>
+
 <pre><code>&lt;insert id=&quot;insert&quot; parameterType=&quot;com.xxx.xxxx.pojo.User&quot;&gt;
     insert into t_user (name)
     values (#{user.name})
@@ -69,12 +82,15 @@
     &lt;/selectKey&gt;
 &lt;/insert&gt;
 </code></pre>
-<h2 id="heading1">方法二（常用）：</h2>
+
+<h2 id="方法二-常用">方法二（常用）：</h2>
+
 <pre><code>&lt;insert id=&quot;insert&quot; parameterType=&quot;Spares&quot;    
     useGeneratedKeys=&quot;true&quot; keyProperty=&quot;id&quot;&gt;   
     insert into system(name) values(#{name})   
 &lt;/insert&gt;
 </code></pre>
+
 <p>然后在调用的时候就可以用插入对象的id属性来获取了。</p>
 
 </article>
